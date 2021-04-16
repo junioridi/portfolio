@@ -1,0 +1,5 @@
+{
+  "inputFiles": ["./src/Binary", "./src/WAConnection", "./WAMessage"],
+  "mode": "modules",
+  "out": "docs"
+}

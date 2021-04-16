@@ -1,0 +1,34 @@
+.story {
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:baseline;
+    justify-content:space-between;
+    height: 200px;
+    width:120px;
+    padding:10px;
+    --background: blue;
+    color:white;
+    border-radius: 10px;
+    margin-right:10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    box-shadow: 0px 5px 17px -7px  rgba( 0,0,0,75); 
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+}
+
+.story:hover {
+    transform: scale(1.07);
+}
+
+.story > h4 {
+    font-size:10px;
+    --font-weight:300;
+}
+
+.story__avatar {
+    margin:2px;
+    border: 5px solid #2e81f4;
+}

@@ -1,0 +1,65 @@
+.login {    
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    background-color: #f1f2f5;
+    justify-content: center;
+    align-items:center;
+    padding-bottom:50px;
+}
+
+.login > .login-logo {
+    width:100px;
+    height:100px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/600px-Facebook_f_logo_%282019%29.svg.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.login > .login-logo-name {
+    height:100px;
+    width:250px;
+    background-image: url( "https://logosmarcas.net/wp-content/uploads/2020/04/Facebook-Logo.png" );
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.login > div > img {
+    object-fit: contain;
+}
+
+.login > form  {
+    padding-top:50px;
+    display:flex;
+    flex-direction: column;
+}
+
+.login > form > input {
+    outline: none;
+    outline-text: 0;
+    border:0;
+    background-color: lightgray;
+    padding:10px;
+    margin: 5px;
+    border-radius: 999px;
+}
+
+
+.login > form > button {
+   background-color: #2e81f4;
+   color: white; 
+   width: 300px;
+   border: 0;
+   border-radius: 20px;
+   padding:10px;
+   margin:5px;
+   font-weight:600;
+}
+
+
+.login > form > button:hover {
+    background-color: white;
+    color: #2e81f4;
+}

@@ -1,0 +1,4 @@
+.story-reel {
+    display:flex;
+    flex-direction:row;
+}

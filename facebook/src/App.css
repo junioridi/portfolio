@@ -1,0 +1,14 @@
+.app-body {
+    background-color: #f1f2f5;
+    display:flex;
+    flex-direction:row;
+    height:100vh;
+}
+
+--.app-body > .feed {
+    flex:0.9;
+}
+
+--.app-body > .sidebar {
+    flex:0.1;
+}

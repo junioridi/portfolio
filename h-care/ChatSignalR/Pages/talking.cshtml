@@ -1,0 +1,31 @@
+@page "{session}/{user}"
+@using ChatSignalR.Pages
+@model TalkingModel
+<div class="screen">
+	<div class="conversation">
+		<div class="messages messages--received">
+		</div>
+		<div class="messages messages--sent">
+		</div>
+	</div>
+	<div class="text-bar">
+		<form class="text-bar__field" id="form-message">
+			<input type="hidden" id="userInput" value="@Model._user"/>
+			<input type="text" id="messageInput" placeholder="Type or thumb up ;)"/>
+		</form>
+		<div class="text-bar__thumb">
+			<div class="thumb"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    var _session = "@Model._session";
+</script>
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+<script src="~/js/booststrap.min.js"></script>
+<link rel="stylesheet" href="~/css/chat.css" type="text/css" />
+<link rel="stylesheet" href="~/css/bootstrap.min.css" type="text/css" />
+
