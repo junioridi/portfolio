@@ -1,0 +1,91 @@
+.roletrando {
+    flex:1;
+    display:flex;    
+    flex-direction:column;
+    justify-content:baseline;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    min-height:800px;
+    background-position: top center;
+    background-size:100% 100%;
+}
+
+.guess {
+    position:fixed;
+    top:5%;
+    left:42.5%;
+    --background: magenta;
+    width:15%;
+    height:15%;
+}
+
+.guess > p {
+    word-wrap: break-word;
+    font-size:20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.roletrando-wrapper
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items:center;
+    position:fixed;
+    top:39.3%;
+    left:28.62%;
+    width:42.7%;
+    height:8.8%; 
+    background-color: tranparent;
+}                
+
+.roletrando-wrapper > div
+{
+    font-size:4vw;
+    width:1.05em;
+    height:100%;
+    margin-right:0.02em;
+}
+
+
+.roletrando-letra {
+    color: black;
+    background: #ededcc;
+}
+
+.roletrando-letra-oculta
+{
+    color: transparent;
+    background: white;
+}
+
+.roletrando__input {
+    position:fixed;
+    top:82%;
+    left:30vw;
+    width:100px;
+    height:200px;
+    backgound:magenta;
+}
+
+
+.roletrando__input > input { 
+    outline:none;
+    border:none;
+    font-size:20px;
+    padding:36px;
+    border-radius:999px;
+    background-color:orange;
+    color:white;
+    font-weight:600;
+    width:50vw;
+
+}
+

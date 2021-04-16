@@ -1,0 +1,25 @@
+.main-menu {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.main-menu > h1 {
+    font-size:30px;
+    margin:50px;
+}
+
+.main-menu__item {
+    padding: 10px;
+    margin:5px;
+    background-color: #2e81f2;
+    border-radius:15px;
+    min-width:300px; 
+    font-weight:600;
+
+}
+
+.main-menu__item > a {
+    color:white;
+}

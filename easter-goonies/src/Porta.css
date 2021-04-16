@@ -1,0 +1,17 @@
+
+.porta
+{
+    padding-top:20vh;
+    font-size:4vw;
+    width:30%;
+    height:100%;
+    margin-right:0.02em;
+    background-size:auto 100%;
+    background-position: center;
+}
+
+
+.porta__link > p {
+    font-size:30px;
+    color:white;
+}
