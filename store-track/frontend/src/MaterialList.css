@@ -1,0 +1,19 @@
+.material-list {
+    display:flex;
+    width:90vw;
+    flex-direction:column;
+    margin:10px;
+}
+
+.material-list__item { 
+    flex:1;
+    margin:5px;
+    padding:15px;
+    background-color: blue;
+}
+
+.material-list__item p {
+    color: white;
+    text-align: left;
+    font-size: large;
+}

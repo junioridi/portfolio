@@ -1,0 +1,9 @@
+.feed {
+    flex:1;
+    display:flex;
+    margin-top:10px;
+    flex-direction:column;
+    justify-content:baseline;
+    align-items:center;
+    max-width:100vh;
+}
