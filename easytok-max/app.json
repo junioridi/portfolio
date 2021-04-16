@@ -1,0 +1,12 @@
+{
+  "name": "easytok-min",
+  "displayName": "easytok-min",
+  "expo": {
+    "name": "easytok-min",
+    "slug": "easytok-min",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
