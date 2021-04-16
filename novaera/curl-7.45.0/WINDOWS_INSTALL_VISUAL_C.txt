@@ -1,0 +1,37 @@
+A lot of these instructions are out of date because they recommend the win32-ssl-devel-msvc package for curl, which no longer exists.
+
+The following instructions allow you to build libcurl using only:
+
+Visual Studio 2013
+curl generic source tarball (tested on curl 7.44.0).
+A. Build libcurl static library
+
+Download the latest curl generic source from: http://curl.haxx.se/latest.cgi?curl=tar.gz
+Extract the source to a local directory (we'll be using C:\libcurl)
+Open a command prompt
+"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\vcvars32.bat" To initialize your VC environment variables (adjust your VS 2013 installation directory as needed)
+cd C:\libcurl\winbuild
+nmake /f Makefile.vc mode=static VC=12
+The build should appear in C:\libcurl\builds\libcurl-vc12-x86-release-static-ipv6-sspi-winssl
+B. Link Against libcurl in Visual Studio
+
+In Visual Studio, right click your project in Solution Explorer, then click "Properties"
+Configuration Properties > C/C++ > General > Additional Include Directories: add C:\libcurl\builds\libcurl-vc12-x86-release-static-ipv6-sspi-winssl\include
+Configuration Properties > C/C++ > Preprocessor > Preprocessor Definitions: add CURL_STATICLIB
+Configuration Properties > Linker > General > Additional Library Directories: add C:\libcurl\builds\libcurl-vc12-x86-release-static-ipv6-sspi-winssl\lib
+Configuration Properties > Linker > Input > Additional Dependencies: add libcurl_a.lib
+C. Call libcurl from Your Project
+
+The following sample shows a call to libcurl:
+
+#include "stdafx.h"
+
+#include <curl/curl.h>
+
+void main(int argc, char* argv[])
+{
+    CURL *curl = curl_easy_init();
+    if (curl) printf("curl_easy_init() succeeded!\n"); 
+    else fprintf(stderr, "Error calling curl_easy_init().\n");
+}
+shareimprove this answer

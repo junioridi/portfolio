@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1447072341 source:/home/adminuser/development/novaera/SDL-Tutorial-1/Starting.cpp
+	<SDL2/SDL.h>
+	<stdio.h>
+
+1448182073 source:/home/adminuser/development/novaera/SDLTutorial/Renderer.cpp
+	<SDL_image.h>
+	<SDL2/SDL.h>
+	<SDL2_image/SDL_image.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<iostream>
+	<stdio.h>
+	<string>
+	<curl/curl.h>
+	"../dicom/dicom.h"
+	"../dicom/dicomdictionary.h"
+	"../utils/utils.h"
+	"../utils/btree.h"
+	"../utils/btreechar.h"
+
+1447784376 source:/home/adminuser/development/novaera/dicom/dicom.cpp
+	"dicom.h"
+
+1448182257 /home/adminuser/development/novaera/dicom/dicom.h
+	<string>
+	<iostream>
+	<vector>
+
+1448052620 /home/adminuser/development/novaera/utils/utils.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<string>
+	<iostream>
+	<cstdint>
+
+1448052620 source:/home/adminuser/development/novaera/utils/utils.cpp
+	"utils.h"
+
+1447793817 /home/adminuser/development/novaera/utils/btree.h
+	<iostream>
+
+1447794627 source:/home/adminuser/development/novaera/utils/btree.cpp
+	"btree.h"
+
+1448181994 /home/adminuser/development/novaera/utils/btreechar.h
+	<iostream>
+	<string.h>
+	<stdlib.h>
+	<memory>
+
+1448182512 source:/home/adminuser/development/novaera/utils/btreechar.cpp
+	"btreechar.h"
+
+1448182042 source:/home/adminuser/development/novaera/dicom/dicomdictionary.cpp
+	"dicomdictionary.h"
+
+1448181838 /home/adminuser/development/novaera/dicom/dicomdictionary.h
+	"../utils/btreechar.h"
+	"../utils/utils.h"
+	<memory>
+
+1474981362 source:/home/junior/Desktop/development/novaera/SDLTutorial/Renderer.cpp
+	<SDL_image.h>
+	<SDL2/SDL.h>
+	<SDL2_image/SDL_image.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<iostream>
+	<stdio.h>
+	<string>
+	<curl/curl.h>
+	"../dicom/dicom.h"
+	"../dicom/dicomdictionary.h"
+	"../utils/utils.h"
+	"../utils/btree.h"
+	"../utils/btreechar.h"
+
+1474981363 /home/junior/Desktop/development/novaera/dicom/dicom.h
+	<string>
+	<iostream>
+	<vector>
+
+1474981363 /home/junior/Desktop/development/novaera/dicom/dicomdictionary.h
+	"../utils/btreechar.h"
+	"../utils/utils.h"
+	<memory>
+
+1474981363 /home/junior/Desktop/development/novaera/utils/btreechar.h
+	<iostream>
+	<string.h>
+	<stdlib.h>
+	<memory>
+
+1474981363 /home/junior/Desktop/development/novaera/utils/utils.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<string>
+	<iostream>
+	<cstdint>
+
+1474981363 /home/junior/Desktop/development/novaera/utils/btree.h
+	<iostream>
+
+1474981363 source:/home/junior/Desktop/development/novaera/dicom/dicom.cpp
+	"dicom.h"
+
+1474981363 source:/home/junior/Desktop/development/novaera/dicom/dicomdictionary.cpp
+	"dicomdictionary.h"
+
+1474981363 source:/home/junior/Desktop/development/novaera/utils/btree.cpp
+	"btree.h"
+
+1474981363 source:/home/junior/Desktop/development/novaera/utils/btreechar.cpp
+	"btreechar.h"
+
+1474981363 source:/home/junior/Desktop/development/novaera/utils/utils.cpp
+	"utils.h"
+
