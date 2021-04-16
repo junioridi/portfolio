@@ -1,0 +1,49 @@
+
+
+rm -rf ~/.expo
+
+npx expo-cli init easytok-min
+
+cd easytok-min
+
+npm i react-dom react-native-web --force
+
+
+npm i styled-components --force
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+npm i @react-navigation/native
+
+npm i @react-navigation/stack
+npm i @react-navigation/bottom-tabs
+npm i @react-native-community/async-storage
+npm i @react-native-community/geolocation
+npm i react-native-permissions --force
+
+cd ./androi/app/src/main
+vi AndroidManifest.xml  
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 
+
+
+npm i react-native-swiper
+npm i react-native-svg   
+npm i react-native-svg-transformer
+
+
+
+expo start
+
+
+vi metro.config.js
+
+
+sudo gedit /etc/sysctl.conf
+
+Add a line at the bottom
+
+fs.inotify.max_user_watches=524288
+
+Then save and exit!
+
+sudo sysctl -p
