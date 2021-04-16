@@ -1,0 +1,21 @@
+.video-sidebar {
+    position:absolute;
+    top:50%;
+    width:2vw;
+    right:1vw;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.video-sidebar__button {
+    height:auto;
+    margin:1vw;
+}
+
+.video-sidebar__button > p {
+    text-align:center;
+}
+
