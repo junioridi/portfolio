@@ -26,8 +26,8 @@ import {
 
 import BarberItem from '../../components/BarberItem';
 
-import SearchIcon from '../../../assets/search.svgx';
-import MyLocationIcon from '../../../assets/my_location.svgx';
+import SearchIcon from '../../icons/Search.js';
+import MyLocationIcon from '../../icons/Location.js';
 
 export default () => {
     const navigation = useNavigation();
@@ -108,7 +108,7 @@ export default () => {
                 <HeaderArea>
                     <HeaderTitle numberOfLines={2}>Encontre o seu barbeiro favorito</HeaderTitle>
                     <SearchButton onPress={()=>navigation.navigate('Search')}>
-                        <SearchIcon width="26" height="26"  />
+                        <SearchIcon width="26" height="26"  fill="white"/>
                     </SearchButton>
                 </HeaderArea>
 
@@ -121,7 +121,7 @@ export default () => {
                         onEndEditing={handleLocationSearch}
                     />
                     <LocationFinder onPress={handleLocationFinder}>
-                        <MyLocationIcon width="24" height="24" />
+                        <MyLocationIcon width="24" height="24" fill="white" />
                     </LocationFinder>
                 </LocationArea>
 

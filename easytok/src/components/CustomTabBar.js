@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components/native';
 
-import HomeIcon from '../../assets/home.svgx';
-import SearchIcon from '../../assets/search.svgx';
-import TodayIcon from '../../assets/today.svgx';
-import FavoriteIcon from '../../assets/favorite.svgx';
-import AccountIcon from '../../assets/account.svgx';
+import HomeIcon from '../icons/Home.js';
+import SearchIcon from '../icons/Search.js';
+import TodayIcon from '../icons/Today.js';
+import FavoriteIcon from '../icons/Favorite.js';
+import AccountIcon from '../icons/Account.js';
 
 import { UserContext } from '../contexts/UserContext'
 

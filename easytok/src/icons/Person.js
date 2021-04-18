@@ -1,20 +1,22 @@
-import React from "react";
+import * as React from "react"
+import Svg, { Path } from "react-native-svg"
 
-function Person() {
+function Person(props) {
   return (
-    <svg
+    <Svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 24 24"
+      width={36}
+      height={36}
+      {...props}
     >
-      <path fill="none" d="M0 0h24v24H0z"></path>
-      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-    </svg>
-  );
+      <Path d="M0 0h24v24H0z" fill="none" />
+      <Path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+    </Svg>
+  )
 }
 
-export default Person;
+export default Person
 
 
  

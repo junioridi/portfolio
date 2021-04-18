@@ -13,8 +13,7 @@ import { Container,
 } from './styles';
 import AsyncStorage from '@react-native-community/async-storage'; 
 import { useNavigation } from '@react-navigation/native';
-import Logo from '../../../assets/logo.svg';
-import Logox from '../../../assets/logo.svgx';
+import Logo from '../../icons/Logo.js';
 import SignInput from '../../components/SignInput';
 
 import EmailIcon from '../../../assets/email.svg';
@@ -73,30 +72,9 @@ export default () => {
 
 
     console.log( Logo );
-    console.log( Logox );
     return (
         <Container>
-        <Svg height="50%" width="50%" viewBox="0 0 100 100">
-          <Circle
-            cx="50"
-            cy="50"
-            r="45"
-            stroke="blue"
-            strokeWidth="2.5"
-            fill="green"
-          />
-          <Rect
-            x="15"
-            y="15"
-            width="70"
-            height="70"
-            stroke="red"
-            strokeWidth="2"
-            fill="yellow"
-          />
-        </Svg>
-        <SvgUri width="50%" height="50%"  />
-        <img src={Logo} width="100%" height="160"  />
+        <Logo iwidth="100%" height={160} />
         <InputArea>
 
            <SignInput IconSvg={EmailIcon} placeholder="Digite seu e-mail"

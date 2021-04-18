@@ -21,19 +21,28 @@ const styles = StyleSheet.create({
 });*/
 
 
+
+
 import React from 'react';
 import{ NavigationContainer } from '@react-navigation/native';
             
 import MainStack from './src/stacks/MainStack.js';
 import UserContextProvider from './src/contexts/UserContext';
+import styled from 'styled-components/native';
+
+const Container = styled.SafeAreaView`
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+`;
 
 export default function App() {
     return (
-        <UserContextProvider>
-          <NavigationContainer>
-                <MainStack />
-          </NavigationContainer>
-        </UserContextProvider>
+        <UserContextProvider >
+            <NavigationContainer>
+               <MainStack />
+            </NavigationContainer>
+        </UserContextProvider >
   );
 }
 

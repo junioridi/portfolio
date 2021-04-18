@@ -1,6 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
-import { Container } from './styles'; 
+import { Container, Text } from './styles'; 
 
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -10,6 +9,7 @@ export default () => {
 
     const navigation = useNavigation();
     const handledClick = async () => {
+        alert("hummm");
         await AsyncStorage.setItem('token', '');
         navigation.reset( {
             routes: [{ name:'Preload' }]
@@ -18,7 +18,7 @@ export default () => {
     
     return (
         <Container>
-            <Text onClick={handledClick}>Profile</Text>
+            <Text onPress={handledClick}>Profile</Text>
         </Container>
     );
 }

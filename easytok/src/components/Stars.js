@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-import StarFull from '../../assets/star.svgx';
-import StarHalf from '../../assets/star_half.svgx';
-import StarEmpty from '../../assets/star_empty.svgx';
+//import StarFull from '../../assets/star.svgx';
+//import StarHalf from '../../assets/star_half.svgx';
+//import StarEmpty from '../../assets/star_empty.svgx';
 
+import StarFull from '../icons/Star.js';
+import StarHalf from '../icons/StarHalf.js';
+import StarEmpty from '../icons/StarEmpty.js';
 
 const StarArea = styled.View`
     flex-direction: row;
@@ -40,9 +43,9 @@ export default ({ stars, showNumber }) => {
         <StarArea>
             {s.map((i, k)=>(
                 <StarView key={k}>
-                    {i === 0 && <StarEmpty width="18" height="18"  />}
-                    {i === 1 && <StarHalf width="18" height="18"  />}
-                    {i === 2 && <StarFull width="18" height="18"  />}
+                {i === 0 && <StarEmpty width="18" height="18" fill="red" />}
+                    {i === 1 && <StarHalf width="18" height="18" fill="red" />}
+                    {i === 2 && <StarFull width="18" height="18"  fill="red" />}
                 </StarView>
             ))}
             {showNumber && <StarText>{stars}</StarText>}

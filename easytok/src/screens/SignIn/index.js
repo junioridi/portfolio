@@ -19,9 +19,9 @@ import { useNavigation } from '@react-navigation/native';
 
 import SignInput from '../../components/SignInput';
 
-import Logo from '../../../assets/logo.svgx';
-import EmailIcon from '../../../assets/email.svgx';
-import LockIcon from '../../../assets/lock.svgx';
+import Logo from '../../icons/Logo.js';
+import EmailIcon from '../../icons/Email.js';
+import LockIcon from '../../icons/Lock.js';
 import Api from '../../Api.js';
 
 import { UserContext } from '../../contexts/UserContext'
@@ -77,11 +77,10 @@ export default () => {
 
 
     return (
-        <Container>
-	
+        <Container>	
+	    <Logo width="100%" height={160} />
         <InputArea>
-	   <Logo width="100%" height={160} />
-           <SignInput IconSvg={EmailIcon} placeholder="Digite seu e-mail"
+            <SignInput IconSvg={EmailIcon} placeholder="Digite seu e-mail"
                 value={emailField}
                 onChangeText={t=>setEmailField(t)}
             />

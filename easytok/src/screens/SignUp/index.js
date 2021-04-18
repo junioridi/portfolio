@@ -13,12 +13,12 @@ import { Container,
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
-import Logo from '../../../assets/logo.svgx';
 import SignInput from '../../components/SignInput';
 
-import EmailIcon from '../../../assets/email.svgx';
-import LockIcon from '../../../assets/lock.svgx';
-import PersonIcon from '../../../assets/person.svgx';
+import Logo from '../../icons/Logo.js';
+import EmailIcon from '../../icons/Email.js';
+import LockIcon from '../../icons/Lock.js';
+import PersonIcon from '../../icons/Person.js';
 import Api from '../../Api.js';
 
 import { UserContext } from '../../contexts/UserContext';
@@ -80,7 +80,7 @@ export default () => {
 
     return (
         <Container>
-	<Logo width="100%" height={160} />
+        <Logo width="100%" height={160} />
         <InputArea>
            <SignInput IconSvg={PersonIcon} placeholder="Digite seu nome"
                 value={nameField}
@@ -103,9 +103,7 @@ export default () => {
             <CustomButton onPress={handleSignClick}>
                 <CustomButtonText>CADASTRAR</CustomButtonText>
             </CustomButton>
-
-        </InputArea>
-        
+        </InputArea>        
         <SignMessageButton onPress={handleMessageButtonClick}>
             <SignMessageButtonText>Já possui possui uma conta?</SignMessageButtonText>
             <SignMessageButtonTextBold>Faça o Login</SignMessageButtonTextBold>
