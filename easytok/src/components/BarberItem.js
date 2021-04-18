@@ -2,13 +2,15 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 import Stars from '../components/Stars';
+import Palette from '../global/Palette.js';
 
 const Area = styled.TouchableOpacity`
-    background-color: #FFFFFF;
+    background-color: ${Palette.color2};
     margin-bottom: 20px;
     border-radius: 20px;
     padding: 15px;
     flex-direction: row;
+    border: 1px solid ${Palette.color2};
 `;
 
 const Avatar = styled.Image`
@@ -25,12 +27,13 @@ const InfoArea = styled.View`
 const UserName = styled.Text`
     font-size: 17px;
     font-weight: bold;
+    color: ${Palette.font}
 `;
 
 const SeeProfileButton = styled.View`
     width: 85px;
     height: 26px;
-    border: 1px solid #4EADBE;
+    border: 1px solid ${Palette.font};
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -38,7 +41,7 @@ const SeeProfileButton = styled.View`
 
 const SeeProfileButtonText = styled.Text`
     font-size: 13px;
-    color: #268596;
+    color: ${Palette.font};
 `;
 
 

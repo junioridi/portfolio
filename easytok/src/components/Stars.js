@@ -9,6 +9,8 @@ import StarFull from '../icons/Star.js';
 import StarHalf from '../icons/StarHalf.js';
 import StarEmpty from '../icons/StarEmpty.js';
 
+import Palette from '../global/Palette.js';
+
 const StarArea = styled.View`
     flex-direction: row;
 `;
@@ -43,9 +45,9 @@ export default ({ stars, showNumber }) => {
         <StarArea>
             {s.map((i, k)=>(
                 <StarView key={k}>
-                {i === 0 && <StarEmpty width="18" height="18" fill="red" />}
-                    {i === 1 && <StarHalf width="18" height="18" fill="red" />}
-                    {i === 2 && <StarFull width="18" height="18"  fill="red" />}
+                {i === 0 && <StarEmpty width="18" height="18" fill={Palette.color4} />}
+                    {i === 1 && <StarHalf width="18" height="18" fill={Palette.color4} />}
+                    {i === 2 && <StarFull width="18" height="18"  fill={Palette.color4} />}
                 </StarView>
             ))}
             {showNumber && <StarText>{stars}</StarText>}

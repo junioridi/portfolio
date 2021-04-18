@@ -9,13 +9,14 @@ export const Container = styled.SafeAreaView`
 
 export const Scroller = styled.ScrollView`
     flex: 1;
-    padding: 20px;
+    padding-right: 0px;
 `;
 
 export const HeaderArea = styled.View`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 20px 0px 20px;
 `;
 export const HeaderTitle = styled.Text`
     width: 250px;
@@ -29,14 +30,15 @@ export const SearchButton = styled.TouchableOpacity`
 `;
 
 export const LocationArea = styled.View`
-    background-color: #4EADBE;
+    background-color: ${Palette.color5};
+    border:1px solid ${Palette.font};
     height: 60px;
     border-radius: 30px;
     flex-direction: row;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 30px;
+    margin: 20px; 
 `;
 export const LocationInput = styled.TextInput`
     flex: 1;
@@ -51,8 +53,8 @@ export const LoadingIcon = styled.ActivityIndicator`
     margin-top: 50px;
 `;
 export const ListArea = styled.View`
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
 `;
 
 

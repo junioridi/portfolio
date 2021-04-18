@@ -8,11 +8,14 @@ import FavoriteIcon from '../icons/Favorite.js';
 import AccountIcon from '../icons/Account.js';
 
 import { UserContext } from '../contexts/UserContext'
+import Palette from '../global/Palette.js';
+
 
 const TabArea = styled.View`
     height:60px;
-    background-color: #4EADBE;
+    background-color: ${Palette.color1};
     flex-direction: row;
+    box-shadow: 0px -2px 2px rgba(0,0,0,0.25);
 `;
 
 
@@ -37,7 +40,7 @@ const TabItemCenter = styled.TouchableOpacity`
     align-items:center;
     background-color: #fff;
     border-radius: 35px;
-    border: 2px solid #4EADBE;
+    border: 2px solid ${Palette.color1};
 `;
 
 
@@ -57,22 +60,22 @@ export default ({state, navigation}) => {
 
     <TabArea>
         <TabItem onPress={()=>goto('Home')}>
-             <HomeIcon width={24} height={24} fill="#fff"/>
+             <HomeIcon width={24} height={24} fill={Palette.font}/>
         </TabItem>
         <TabItem onPress={()=>goto('Search')}>
-            <SearchIcon width={24} height={24}  fill="#fff"/>
+            <SearchIcon width={24} height={24}  fill={Palette.font}/>
         </TabItem >
         <TabItemCenter onPress={()=>goto('Appointments')}>
-            <TodayIcon width={32} height={32}  fill="#4EADBE"/>
+            <TodayIcon width={32} height={32}  fill={Palette.color1}/>
         </TabItemCenter>
         <TabItem onPress={()=>goto('Favorites')}>
-            <FavoriteIcon width={24} height={24}  fill="#fff" />
+            <FavoriteIcon width={24} height={24}  fill={Palette.font} />
         </TabItem>
         <TabItem onPress={()=>goto('Profile')}>  
             { user.avatar  != "" ?
                 <AvatarIcon source={{ uri: user.avatar }} />
                 :
-                <AccountIcon width={24} height={24}  fill="#fff"/>
+                <AccountIcon width={24} height={24}  fill={Palette.font}/>
             }
         </TabItem>
     </TabArea>
