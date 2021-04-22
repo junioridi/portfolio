@@ -65,13 +65,13 @@ export default ({state, navigation}) => {
         <TabItem onPress={()=>goto('Search')}>
             <SearchIcon width={24} height={24}  fill={Palette.font}/>
         </TabItem >
-        <TabItemCenter onPress={()=>goto('Appointments')}>
+        <TabItemCenter onPress={()=>goto('Materiais')}>
             <TodayIcon width={32} height={32}  fill={Palette.color1}/>
         </TabItemCenter>
         <TabItem onPress={()=>goto('Favorites')}>
             <FavoriteIcon width={24} height={24}  fill={Palette.font} />
         </TabItem>
-        <TabItem onPress={()=>goto('Profile')}>  
+        <TabItem onPress={()=>goto('Movimento')}>  
             { user.avatar  != "" ?
                 <AvatarIcon source={{ uri: user.avatar }} />
                 :

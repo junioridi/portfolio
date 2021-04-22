@@ -34,7 +34,8 @@ export default () => {
     }
 
 
-    return (<Container>
+    return (
+        <Container>
         <BackImage style={[StyleSheet.absoluteFill, {position:"absolute",  bottom:0, zIndex:-1 } ]} source={Back}/>
         <Scroller >        
         

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Platform, RefreshControl } from 'react-native';
+import { Platform, RefreshControl, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 //import { request, PERMISSIONS } from 'react-native-permissions';
 //import Geolocation from '@react-native-community/geolocation';
+import Back from '../../../assets/back-large.png';
+import StyleSheet from 'styled-components/native';
 
 
 import Api from '../../Api';
@@ -20,11 +22,12 @@ import {
     LocationFinder,
 
     LoadingIcon,
-    ListArea
+    ListArea, 
+    BackImage
     
 } from './styles';
 
-import BarberItem from '../../components/BarberItem';
+import MaterialItem from '../../components/MaterialItem';
 
 import SearchIcon from '../../icons/Search.js';
 import MyLocationIcon from '../../icons/Location.js';
@@ -100,13 +103,15 @@ export default () => {
     }
 
     return (
-        <Container>
+        
+        <Container>    
+        <BackImage style={[StyleSheet.absoluteFill, {position:"absolute",  bottom:0, zIndex:-1 } ]} source={Back}/>
             <Scroller refreshControl={
                 <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
             }>
                 
                 <HeaderArea>
-                    <HeaderTitle numberOfLines={2}>Encontre o seu barbeiro favorito</HeaderTitle>
+                    <HeaderTitle numberOfLines={2}>Lista de materiais cadastrados</HeaderTitle>
                     <SearchButton onPress={()=>navigation.navigate('Search')}>
                         <SearchIcon width="26" height="26"  fill="white"/>
                     </SearchButton>
@@ -131,7 +136,7 @@ export default () => {
                 
                 <ListArea>
                     {list.map((item, k)=>(
-                        <BarberItem key={k} data={item} />
+                        <MaterialItem key={k} data={item} />
                     ))}
                 </ListArea>
 
@@ -139,3 +144,8 @@ export default () => {
         </Container>
     );
 }
+
+
+
+
+//<ImageBackground source={Back} style={{   top: 0, resizeMode: 'contain'   }}  resizeMode="contain" resizeMethod="resize" >

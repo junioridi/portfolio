@@ -4,19 +4,10 @@ import styled from 'styled-components/native';
 import Stars from '../components/Stars';
 import Palette from '../global/Palette.js';
 
-
-const AreaOld = styled.TouchableOpacity`
-    background-color: ${Palette.color2};
-    margin-bottom: 20px;
-    border-radius: 20px;
-    padding: 15px;
-    flex-direction: row;
-    border: 1px solid ${Palette.color2};
-`;
-
 const Area = styled.TouchableOpacity`
     background-color: ${Palette.color1};
-    padding: 20px;
+    padding: 10px;
+    margin: 0px 20px;
     flex-direction: row;
     borderBottomWidth:1px;
     borderBottomColor: ${Palette.color3};
@@ -29,11 +20,11 @@ const Avatar = styled.Image`
 `;
 
 const InfoArea = styled.View`
-    margin-left: 20px;
+    margin: 20px;
     justify-content: space-between;
 `;
 
-const UserName = styled.Text`
+const ItemValue = styled.Text`
     font-size: 17px;
     font-weight: bold;
     color: ${Palette.font}
@@ -54,17 +45,17 @@ const SeeProfileButtonText = styled.Text`
 `;
 
 
-export default ({data}) => {
+export default ({value, onPress}) => {
     return (
-        <Area>
-            <Avatar source={{uri: data.avatar}} />
+        <Area onPress={onPress}>
+            <Avatar  />
             <InfoArea>
-                <UserName>{data.name}</UserName>
+                <ItemValue>{value}</ItemValue>
 
-                <Stars stars={data.stars} showNumber={true} />
+                <Stars stars={5} showNumber={true} />
 
                 <SeeProfileButton>
-                    <SeeProfileButtonText>Ver Perfil</SeeProfileButtonText>
+                    <SeeProfileButtonText>Ver Detalhes</SeeProfileButtonText>
                 </SeeProfileButton>
             </InfoArea>
         </Area>
